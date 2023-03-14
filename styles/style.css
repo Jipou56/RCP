@@ -13,10 +13,10 @@ body {
 }
 
 nav {
-  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 25px;
   background: #fafafa;
   box-shadow: inset 0px -1px 0px #c5c5c6;
@@ -51,10 +51,9 @@ nav {
 }
 
 .navlinks-container a {
-  margin: 0 10px;
+  margin: 0 20px;
   font-size: 16px;
   font-weight: 500;
-  text-decoration: none;
   color: #414141;
   display: inline-block;
   position: relative;
@@ -77,7 +76,7 @@ nav {
   transform: scale(1);
 }
 
-@media (max-width: 920px) {
+@media (max-width: 900px) {
   nav {
     padding: 15px 20px;
     position: relative;
@@ -166,41 +165,6 @@ nav {
   }
 }
 
-@media (max-width: 500px) {
-  .nav-icon {
-    order: 2;
-    margin: 0 auto;
-  }
-  .nav-icon span {
-    font-size: 22px;
-  }
-}
-
-.contact {
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 30px;
-  background-color: rgba(220, 0, 0, 1);
-  background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0)
-  );
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-}
-
-.contact:hover {
-  background-color: rgba(255, 0, 0, 1);
-}
-
-.contact:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+h1 img {
+  max-height: 200px;
 }
